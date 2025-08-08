@@ -1,0 +1,422 @@
+[
+  {
+    "poly_id": "linear_pos",
+    "activation": "tanh",
+    "best_mse": 0.18615464305140336,
+    "final_mse": 0.18615464305140336,
+    "params": {
+      "w": 0.984420621263805,
+      "b": -0.18861965588794374,
+      "v": 2.0012815143236895,
+      "c": 0.17240494117361582
+    },
+    "static": "outputs/benchmark/linear_pos/tanh/linear_pos_tanh_fit.png",
+    "gif": "outputs/benchmark/linear_pos/tanh/linear_pos_tanh_convergence.gif"
+  },
+  {
+    "poly_id": "linear_pos",
+    "activation": "relu",
+    "best_mse": 0.6641814730464004,
+    "final_mse": 0.6641814730464004,
+    "params": {
+      "w": -1.6075552854519044,
+      "b": -0.0405602709974772,
+      "v": -1.102629263054277,
+      "c": 0.9298868373017397
+    },
+    "static": "outputs/benchmark/linear_pos/relu/linear_pos_relu_fit.png",
+    "gif": "outputs/benchmark/linear_pos/relu/linear_pos_relu_convergence.gif"
+  },
+  {
+    "poly_id": "linear_pos",
+    "activation": "sigmoid",
+    "best_mse": 2.120974815429899,
+    "final_mse": 2.120974815429899,
+    "params": {
+      "w": 0.9781960599504032,
+      "b": -0.4127218203338276,
+      "v": 1.0659074517749092,
+      "c": -0.321049832022735
+    },
+    "static": "outputs/benchmark/linear_pos/sigmoid/linear_pos_sigmoid_fit.png",
+    "gif": "outputs/benchmark/linear_pos/sigmoid/linear_pos_sigmoid_convergence.gif"
+  },
+  {
+    "poly_id": "linear_pos",
+    "activation": "leaky_relu",
+    "best_mse": 0.27971315924602963,
+    "final_mse": 0.27971315924602963,
+    "params": {
+      "w": 1.0342134483970729,
+      "b": 0.8916860452647037,
+      "v": 1.26503322244349,
+      "c": -1.313946487307544
+    },
+    "static": "outputs/benchmark/linear_pos/leaky_relu/linear_pos_leaky_relu_fit.png",
+    "gif": "outputs/benchmark/linear_pos/leaky_relu/linear_pos_leaky_relu_convergence.gif"
+  },
+  {
+    "poly_id": "linear_pos",
+    "activation": "sine",
+    "best_mse": 0.10604188363289929,
+    "final_mse": 0.10604188363289929,
+    "params": {
+      "w": 0.6896018124791768,
+      "b": -0.03036131664439929,
+      "v": 2.068936266941759,
+      "c": 0.04926834602637546
+    },
+    "static": "outputs/benchmark/linear_pos/sine/linear_pos_sine_fit.png",
+    "gif": "outputs/benchmark/linear_pos/sine/linear_pos_sine_convergence.gif"
+  },
+  {
+    "poly_id": "linear_pos",
+    "activation": "identity",
+    "best_mse": 1.15156166093179e-08,
+    "final_mse": 1.15156166093179e-08,
+    "params": {
+      "w": 1.036942045114725,
+      "b": -0.13676357829755847,
+      "v": 1.157243483376345,
+      "c": 0.15816175414429776
+    },
+    "static": "outputs/benchmark/linear_pos/identity/linear_pos_identity_fit.png",
+    "gif": "outputs/benchmark/linear_pos/identity/linear_pos_identity_convergence.gif"
+  },
+  {
+    "poly_id": "quadratic_u",
+    "activation": "tanh",
+    "best_mse": 1.2769887351864264,
+    "final_mse": 1.2769887351864264,
+    "params": {
+      "w": -0.20101357789277688,
+      "b": -0.007870566800439184,
+      "v": 0.1373498502174597,
+      "c": 1.440355014110935
+    },
+    "static": "outputs/benchmark/quadratic_u/tanh/quadratic_u_tanh_fit.png",
+    "gif": "outputs/benchmark/quadratic_u/tanh/quadratic_u_tanh_convergence.gif"
+  },
+  {
+    "poly_id": "quadratic_u",
+    "activation": "relu",
+    "best_mse": 0.9605783141315569,
+    "final_mse": 0.9605783141315569,
+    "params": {
+      "w": 0.6534479906497078,
+      "b": -0.23185200582482188,
+      "v": 1.2397487780960987,
+      "c": 1.009851630355762
+    },
+    "static": "outputs/benchmark/quadratic_u/relu/quadratic_u_relu_fit.png",
+    "gif": "outputs/benchmark/quadratic_u/relu/quadratic_u_relu_convergence.gif"
+  },
+  {
+    "poly_id": "quadratic_u",
+    "activation": "sigmoid",
+    "best_mse": 1.2744473826518976,
+    "final_mse": 1.2744473826518976,
+    "params": {
+      "w": -0.27456445526213114,
+      "b": -0.3576004168884176,
+      "v": 0.5703386141328965,
+      "c": 1.2181462280036177
+    },
+    "static": "outputs/benchmark/quadratic_u/sigmoid/quadratic_u_sigmoid_fit.png",
+    "gif": "outputs/benchmark/quadratic_u/sigmoid/quadratic_u_sigmoid_convergence.gif"
+  },
+  {
+    "poly_id": "quadratic_u",
+    "activation": "leaky_relu",
+    "best_mse": 1.2755853391969503,
+    "final_mse": 1.2755853391969503,
+    "params": {
+      "w": -0.056965444487170364,
+      "b": -0.42469997027456075,
+      "v": -0.4169480960816217,
+      "c": 1.4400802228005083
+    },
+    "static": "outputs/benchmark/quadratic_u/leaky_relu/quadratic_u_leaky_relu_fit.png",
+    "gif": "outputs/benchmark/quadratic_u/leaky_relu/quadratic_u_leaky_relu_convergence.gif"
+  },
+  {
+    "poly_id": "quadratic_u",
+    "activation": "sine",
+    "best_mse": 1.2736635361287993,
+    "final_mse": 1.2736635361287993,
+    "params": {
+      "w": 0.421542766485015,
+      "b": 0.14149321823927838,
+      "v": -0.08579802714568296,
+      "c": 1.4487550713151396
+    },
+    "static": "outputs/benchmark/quadratic_u/sine/quadratic_u_sine_fit.png",
+    "gif": "outputs/benchmark/quadratic_u/sine/quadratic_u_sine_convergence.gif"
+  },
+  {
+    "poly_id": "quadratic_u",
+    "activation": "identity",
+    "best_mse": 1.275159369320467,
+    "final_mse": 1.275159369320467,
+    "params": {
+      "w": 0.0012160410731139166,
+      "b": 0.605286988686513,
+      "v": 0.7351197281720105,
+      "c": 1.016401720166412
+    },
+    "static": "outputs/benchmark/quadratic_u/identity/quadratic_u_identity_fit.png",
+    "gif": "outputs/benchmark/quadratic_u/identity/quadratic_u_identity_convergence.gif"
+  },
+  {
+    "poly_id": "cubic_s",
+    "activation": "tanh",
+    "best_mse": 3.583234176408794,
+    "final_mse": 3.583234176408794,
+    "params": {
+      "w": 1.1269934476975478,
+      "b": 0.8819520360453446,
+      "v": 4.890859496947045,
+      "c": -2.24892764247911
+    },
+    "static": "outputs/benchmark/cubic_s/tanh/cubic_s_tanh_fit.png",
+    "gif": "outputs/benchmark/cubic_s/tanh/cubic_s_tanh_convergence.gif"
+  },
+  {
+    "poly_id": "cubic_s",
+    "activation": "relu",
+    "best_mse": 1.4974018263321411,
+    "final_mse": 1.4974018263321411,
+    "params": {
+      "w": -2.472138419053395,
+      "b": -0.4219622797144764,
+      "v": -2.40701142799002,
+      "c": 1.907390826917899
+    },
+    "static": "outputs/benchmark/cubic_s/relu/cubic_s_relu_fit.png",
+    "gif": "outputs/benchmark/cubic_s/relu/cubic_s_relu_convergence.gif"
+  },
+  {
+    "poly_id": "cubic_s",
+    "activation": "sigmoid",
+    "best_mse": 10.921962336675481,
+    "final_mse": 10.921962336675481,
+    "params": {
+      "w": -2.2390529277562865,
+      "b": -0.5951665773136413,
+      "v": -4.371748514584186,
+      "c": 0.5001160005738482
+    },
+    "static": "outputs/benchmark/cubic_s/sigmoid/cubic_s_sigmoid_fit.png",
+    "gif": "outputs/benchmark/cubic_s/sigmoid/cubic_s_sigmoid_convergence.gif"
+  },
+  {
+    "poly_id": "cubic_s",
+    "activation": "leaky_relu",
+    "best_mse": 1.4162609526434216,
+    "final_mse": 1.4162609526434216,
+    "params": {
+      "w": -2.4960753135543867,
+      "b": -0.4292934918034922,
+      "v": -2.386984553765483,
+      "c": 1.8993491512516045
+    },
+    "static": "outputs/benchmark/cubic_s/leaky_relu/cubic_s_leaky_relu_fit.png",
+    "gif": "outputs/benchmark/cubic_s/leaky_relu/cubic_s_leaky_relu_convergence.gif"
+  },
+  {
+    "poly_id": "cubic_s",
+    "activation": "sine",
+    "best_mse": 3.868872760541228,
+    "final_mse": 3.868872760541228,
+    "params": {
+      "w": 0.6971712072344561,
+      "b": 0.34075271236301474,
+      "v": 5.077368308114905,
+      "c": -1.8692690339262605
+    },
+    "static": "outputs/benchmark/cubic_s/sine/cubic_s_sine_fit.png",
+    "gif": "outputs/benchmark/cubic_s/sine/cubic_s_sine_convergence.gif"
+  },
+  {
+    "poly_id": "cubic_s",
+    "activation": "identity",
+    "best_mse": 3.1867403440386695,
+    "final_mse": 3.1867403440386695,
+    "params": {
+      "w": -1.703318692303706,
+      "b": 0.17694305007923375,
+      "v": -1.7700885281454812,
+      "c": -0.8702121112539136
+    },
+    "static": "outputs/benchmark/cubic_s/identity/cubic_s_identity_fit.png",
+    "gif": "outputs/benchmark/cubic_s/identity/cubic_s_identity_convergence.gif"
+  },
+  {
+    "poly_id": "cubic_neg",
+    "activation": "tanh",
+    "best_mse": 3.7739581567770357,
+    "final_mse": 3.7739581567770357,
+    "params": {
+      "w": -0.7690872258171236,
+      "b": -0.29367507719254565,
+      "v": 4.3433766747022835,
+      "c": 1.0792524800757437
+    },
+    "static": "outputs/benchmark/cubic_neg/tanh/cubic_neg_tanh_fit.png",
+    "gif": "outputs/benchmark/cubic_neg/tanh/cubic_neg_tanh_convergence.gif"
+  },
+  {
+    "poly_id": "cubic_neg",
+    "activation": "relu",
+    "best_mse": 3.05064975699919,
+    "final_mse": 3.05064975699919,
+    "params": {
+      "w": -2.023400484575787,
+      "b": 0.27038447349100003,
+      "v": 2.0522362364743585,
+      "c": -2.0759547160322094
+    },
+    "static": "outputs/benchmark/cubic_neg/relu/cubic_neg_relu_fit.png",
+    "gif": "outputs/benchmark/cubic_neg/relu/cubic_neg_relu_convergence.gif"
+  },
+  {
+    "poly_id": "cubic_neg",
+    "activation": "sigmoid",
+    "best_mse": 10.940676080574319,
+    "final_mse": 10.940676080574319,
+    "params": {
+      "w": 1.8285453535002743,
+      "b": -0.2341551752182657,
+      "v": -2.7190102866054375,
+      "c": 1.525143920507247
+    },
+    "static": "outputs/benchmark/cubic_neg/sigmoid/cubic_neg_sigmoid_fit.png",
+    "gif": "outputs/benchmark/cubic_neg/sigmoid/cubic_neg_sigmoid_convergence.gif"
+  },
+  {
+    "poly_id": "cubic_neg",
+    "activation": "leaky_relu",
+    "best_mse": 3.0050960191579774,
+    "final_mse": 3.0050960191579774,
+    "params": {
+      "w": -2.092848049135639,
+      "b": 0.18602569418172493,
+      "v": 2.0152476221008713,
+      "c": -1.9908397612460391
+    },
+    "static": "outputs/benchmark/cubic_neg/leaky_relu/cubic_neg_leaky_relu_fit.png",
+    "gif": "outputs/benchmark/cubic_neg/leaky_relu/cubic_neg_leaky_relu_convergence.gif"
+  },
+  {
+    "poly_id": "cubic_neg",
+    "activation": "sine",
+    "best_mse": 3.2843653862431337,
+    "final_mse": 3.2843653862431337,
+    "params": {
+      "w": -0.6041774378623413,
+      "b": -0.10484811540780595,
+      "v": 4.465413840728272,
+      "c": 0.8285018166037262
+    },
+    "static": "outputs/benchmark/cubic_neg/sine/cubic_neg_sine_fit.png",
+    "gif": "outputs/benchmark/cubic_neg/sine/cubic_neg_sine_convergence.gif"
+  },
+  {
+    "poly_id": "cubic_neg",
+    "activation": "identity",
+    "best_mse": 1.7559701776180625,
+    "final_mse": 1.7559701776180632,
+    "params": {
+      "w": 1.5072335013513747,
+      "b": -0.5254536079564918,
+      "v": -1.787235417943191,
+      "c": -0.3078279402271129
+    },
+    "static": "outputs/benchmark/cubic_neg/identity/cubic_neg_identity_fit.png",
+    "gif": "outputs/benchmark/cubic_neg/identity/cubic_neg_identity_convergence.gif"
+  },
+  {
+    "poly_id": "quartic_w",
+    "activation": "tanh",
+    "best_mse": 0.17651285574561257,
+    "final_mse": 0.17651285574561257,
+    "params": {
+      "w": -0.6837388752655462,
+      "b": -0.48096943610330134,
+      "v": 0.06861319419576449,
+      "c": 0.319912846327667
+    },
+    "static": "outputs/benchmark/quartic_w/tanh/quartic_w_tanh_fit.png",
+    "gif": "outputs/benchmark/quartic_w/tanh/quartic_w_tanh_convergence.gif"
+  },
+  {
+    "poly_id": "quartic_w",
+    "activation": "relu",
+    "best_mse": 0.18146870983030797,
+    "final_mse": 0.18146870983030797,
+    "params": {
+      "w": -0.16068621531850907,
+      "b": 0.644326259666413,
+      "v": -0.12231771636467231,
+      "c": 0.40063501033427523
+    },
+    "static": "outputs/benchmark/quartic_w/relu/quartic_w_relu_fit.png",
+    "gif": "outputs/benchmark/quartic_w/relu/quartic_w_relu_convergence.gif"
+  },
+  {
+    "poly_id": "quartic_w",
+    "activation": "sigmoid",
+    "best_mse": 0.18179703067280428,
+    "final_mse": 0.18179703067280428,
+    "params": {
+      "w": -0.44890329717096006,
+      "b": -0.13783937328629559,
+      "v": -0.178910995784732,
+      "c": 0.39945186708877556
+    },
+    "static": "outputs/benchmark/quartic_w/sigmoid/quartic_w_sigmoid_fit.png",
+    "gif": "outputs/benchmark/quartic_w/sigmoid/quartic_w_sigmoid_convergence.gif"
+  },
+  {
+    "poly_id": "quartic_w",
+    "activation": "leaky_relu",
+    "best_mse": 0.1542195795537827,
+    "final_mse": 0.1542195795537827,
+    "params": {
+      "w": 0.5980886213031242,
+      "b": -0.785608846375261,
+      "v": 0.31560547408894934,
+      "c": 0.29894428871374834
+    },
+    "static": "outputs/benchmark/quartic_w/leaky_relu/quartic_w_leaky_relu_fit.png",
+    "gif": "outputs/benchmark/quartic_w/leaky_relu/quartic_w_leaky_relu_convergence.gif"
+  },
+  {
+    "poly_id": "quartic_w",
+    "activation": "sine",
+    "best_mse": 0.18479627822283118,
+    "final_mse": 0.18479627822283118,
+    "params": {
+      "w": -0.19558335783779227,
+      "b": -0.7463626602769,
+      "v": -0.15535587305544177,
+      "c": 0.20739271177444915
+    },
+    "static": "outputs/benchmark/quartic_w/sine/quartic_w_sine_fit.png",
+    "gif": "outputs/benchmark/quartic_w/sine/quartic_w_sine_convergence.gif"
+  },
+  {
+    "poly_id": "quartic_w",
+    "activation": "identity",
+    "best_mse": 0.18064715722961136,
+    "final_mse": 0.18064715722961136,
+    "params": {
+      "w": 0.00042154330110203504,
+      "b": 0.2189167541585274,
+      "v": 0.8218967974808673,
+      "c": 0.13840930072245047
+    },
+    "static": "outputs/benchmark/quartic_w/identity/quartic_w_identity_fit.png",
+    "gif": "outputs/benchmark/quartic_w/identity/quartic_w_identity_convergence.gif"
+  }
+]
