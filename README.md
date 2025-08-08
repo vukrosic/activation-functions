@@ -63,65 +63,115 @@ Why these patterns?
 Each fit figure has: a figure-level header with the model, an on-plot box listing x-range (top), parameters (`w, b, v, c`) in order, and predicted ŷ-range (bottom). GIFs animate training snapshots.
 
 ### Benchmark: single-neuron across activations and polynomials
-- Dataset note: PNGs are shown inline. GIFs are now shown inline as well.
+- GIFs only below (full width); PNG fit images omitted.
 
 #### linear_pos
-| Activation | Fit (PNG) | GIF |
-|--|--|--|
-| tanh | ![](outputs/benchmark/linear_pos/tanh/linear_pos_tanh_fit.png) | ![](outputs/benchmark/linear_pos/tanh/linear_pos_tanh_convergence.gif) |
-| relu | ![](outputs/benchmark/linear_pos/relu/linear_pos_relu_fit.png) | ![](outputs/benchmark/linear_pos/relu/linear_pos_relu_convergence.gif) |
-| sigmoid | ![](outputs/benchmark/linear_pos/sigmoid/linear_pos_sigmoid_fit.png) | ![](outputs/benchmark/linear_pos/sigmoid/linear_pos_sigmoid_convergence.gif) |
-| leaky_relu | ![](outputs/benchmark/linear_pos/leaky_relu/linear_pos_leaky_relu_fit.png) | ![](outputs/benchmark/linear_pos/leaky_relu/linear_pos_leaky_relu_convergence.gif) |
-| sine | ![](outputs/benchmark/linear_pos/sine/linear_pos_sine_fit.png) | ![](outputs/benchmark/linear_pos/sine/linear_pos_sine_convergence.gif) |
-| identity | ![](outputs/benchmark/linear_pos/identity/linear_pos_identity_fit.png) | ![](outputs/benchmark/linear_pos/identity/linear_pos_identity_convergence.gif) |
+
+**tanh**
+<img src="outputs/benchmark/linear_pos/tanh/linear_pos_tanh_convergence.gif" width="100%">
+
+**relu**
+<img src="outputs/benchmark/linear_pos/relu/linear_pos_relu_convergence.gif" width="100%">
+
+**sigmoid**
+<img src="outputs/benchmark/linear_pos/sigmoid/linear_pos_sigmoid_convergence.gif" width="100%">
+
+**leaky_relu**
+<img src="outputs/benchmark/linear_pos/leaky_relu/linear_pos_leaky_relu_convergence.gif" width="100%">
+
+**sine**
+<img src="outputs/benchmark/linear_pos/sine/linear_pos_sine_convergence.gif" width="100%">
+
+**identity**
+<img src="outputs/benchmark/linear_pos/identity/linear_pos_identity_convergence.gif" width="100%">
 
 - Explanation: Linear target; `identity` matches exactly; other activations approximate via their nonlinearity.
 
 #### quadratic_u
-| Activation | Fit (PNG) | GIF |
-|--|--|--|
-| tanh | ![](outputs/benchmark/quadratic_u/tanh/quadratic_u_tanh_fit.png) | ![](outputs/benchmark/quadratic_u/tanh/quadratic_u_tanh_convergence.gif) |
-| relu | ![](outputs/benchmark/quadratic_u/relu/quadratic_u_relu_fit.png) | ![](outputs/benchmark/quadratic_u/relu/quadratic_u_relu_convergence.gif) |
-| sigmoid | ![](outputs/benchmark/quadratic_u/sigmoid/quadratic_u_sigmoid_fit.png) | ![](outputs/benchmark/quadratic_u/sigmoid/quadratic_u_sigmoid_convergence.gif) |
-| leaky_relu | ![](outputs/benchmark/quadratic_u/leaky_relu/quadratic_u_leaky_relu_fit.png) | ![](outputs/benchmark/quadratic_u/leaky_relu/quadratic_u_leaky_relu_convergence.gif) |
-| sine | ![](outputs/benchmark/quadratic_u/sine/quadratic_u_sine_fit.png) | ![](outputs/benchmark/quadratic_u/sine/quadratic_u_sine_convergence.gif) |
-| identity | ![](outputs/benchmark/quadratic_u/identity/quadratic_u_identity_fit.png) | ![](outputs/benchmark/quadratic_u/identity/quadratic_u_identity_convergence.gif) |
+
+**tanh**
+<img src="outputs/benchmark/quadratic_u/tanh/quadratic_u_tanh_convergence.gif" width="100%">
+
+**relu**
+<img src="outputs/benchmark/quadratic_u/relu/quadratic_u_relu_convergence.gif" width="100%">
+
+**sigmoid**
+<img src="outputs/benchmark/quadratic_u/sigmoid/quadratic_u_sigmoid_convergence.gif" width="100%">
+
+**leaky_relu**
+<img src="outputs/benchmark/quadratic_u/leaky_relu/quadratic_u_leaky_relu_convergence.gif" width="100%">
+
+**sine**
+<img src="outputs/benchmark/quadratic_u/sine/quadratic_u_sine_convergence.gif" width="100%">
+
+**identity**
+<img src="outputs/benchmark/quadratic_u/identity/quadratic_u_identity_convergence.gif" width="100%">
 
 - Explanation: Upward-convex; `relu`/`leaky_relu` emulate convexity via a hinge; bounded activations may underfit with one neuron.
 
 #### cubic_s
-| Activation | Fit (PNG) | GIF |
-|--|--|--|
-| tanh | ![](outputs/benchmark/cubic_s/tanh/cubic_s_tanh_fit.png) | ![](outputs/benchmark/cubic_s/tanh/cubic_s_tanh_convergence.gif) |
-| relu | ![](outputs/benchmark/cubic_s/relu/cubic_s_relu_fit.png) | ![](outputs/benchmark/cubic_s/relu/cubic_s_relu_convergence.gif) |
-| sigmoid | ![](outputs/benchmark/cubic_s/sigmoid/cubic_s_sigmoid_fit.png) | ![](outputs/benchmark/cubic_s/sigmoid/cubic_s_sigmoid_convergence.gif) |
-| leaky_relu | ![](outputs/benchmark/cubic_s/leaky_relu/cubic_s_leaky_relu_fit.png) | ![](outputs/benchmark/cubic_s/leaky_relu/cubic_s_leaky_relu_convergence.gif) |
-| sine | ![](outputs/benchmark/cubic_s/sine/cubic_s_sine_fit.png) | ![](outputs/benchmark/cubic_s/sine/cubic_s_sine_convergence.gif) |
-| identity | ![](outputs/benchmark/cubic_s/identity/cubic_s_identity_fit.png) | ![](outputs/benchmark/cubic_s/identity/cubic_s_identity_convergence.gif) |
+
+**tanh**
+<img src="outputs/benchmark/cubic_s/tanh/cubic_s_tanh_convergence.gif" width="100%">
+
+**relu**
+<img src="outputs/benchmark/cubic_s/relu/cubic_s_relu_convergence.gif" width="100%">
+
+**sigmoid**
+<img src="outputs/benchmark/cubic_s/sigmoid/cubic_s_sigmoid_convergence.gif" width="100%">
+
+**leaky_relu**
+<img src="outputs/benchmark/cubic_s/leaky_relu/cubic_s_leaky_relu_convergence.gif" width="100%">
+
+**sine**
+<img src="outputs/benchmark/cubic_s/sine/cubic_s_sine_convergence.gif" width="100%">
+
+**identity**
+<img src="outputs/benchmark/cubic_s/identity/cubic_s_identity_convergence.gif" width="100%">
 
 - Explanation: S-shaped cubic; `leaky_relu` captures asymmetry; `tanh`/`sigmoid` are bounded, so they match locally.
 
 #### cubic_neg
-| Activation | Fit (PNG) | GIF |
-|--|--|--|
-| tanh | ![](outputs/benchmark/cubic_neg/tanh/cubic_neg_tanh_fit.png) | ![](outputs/benchmark/cubic_neg/tanh/cubic_neg_tanh_convergence.gif) |
-| relu | ![](outputs/benchmark/cubic_neg/relu/cubic_neg_relu_fit.png) | ![](outputs/benchmark/cubic_neg/relu/cubic_neg_relu_convergence.gif) |
-| sigmoid | ![](outputs/benchmark/cubic_neg/sigmoid/cubic_neg_sigmoid_fit.png) | ![](outputs/benchmark/cubic_neg/sigmoid/cubic_neg_sigmoid_convergence.gif) |
-| leaky_relu | ![](outputs/benchmark/cubic_neg/leaky_relu/cubic_neg_leaky_relu_fit.png) | ![](outputs/benchmark/cubic_neg/leaky_relu/cubic_neg_leaky_relu_convergence.gif) |
-| sine | ![](outputs/benchmark/cubic_neg/sine/cubic_neg_sine_fit.png) | ![](outputs/benchmark/cubic_neg/sine/cubic_neg_sine_convergence.gif) |
-| identity | ![](outputs/benchmark/cubic_neg/identity/cubic_neg_identity_fit.png) | ![](outputs/benchmark/cubic_neg/identity/cubic_neg_identity_convergence.gif) |
+
+**tanh**
+<img src="outputs/benchmark/cubic_neg/tanh/cubic_neg_tanh_convergence.gif" width="100%">
+
+**relu**
+<img src="outputs/benchmark/cubic_neg/relu/cubic_neg_relu_convergence.gif" width="100%">
+
+**sigmoid**
+<img src="outputs/benchmark/cubic_neg/sigmoid/cubic_neg_sigmoid_convergence.gif" width="100%">
+
+**leaky_relu**
+<img src="outputs/benchmark/cubic_neg/leaky_relu/cubic_neg_leaky_relu_convergence.gif" width="100%">
+
+**sine**
+<img src="outputs/benchmark/cubic_neg/sine/cubic_neg_sine_convergence.gif" width="100%">
+
+**identity**
+<img src="outputs/benchmark/cubic_neg/identity/cubic_neg_identity_convergence.gif" width="100%">
 
 - Explanation: Negative-slope cubic region; `identity` follows the broad linear trend best with a single unit.
 
 #### quartic_w
-| Activation | Fit (PNG) | GIF |
-|--|--|--|
-| tanh | ![](outputs/benchmark/quartic_w/tanh/quartic_w_tanh_fit.png) | ![](outputs/benchmark/quartic_w/tanh/quartic_w_tanh_convergence.gif) |
-| relu | ![](outputs/benchmark/quartic_w/relu/quartic_w_relu_fit.png) | ![](outputs/benchmark/quartic_w/relu/quartic_w_relu_convergence.gif) |
-| sigmoid | ![](outputs/benchmark/quartic_w/sigmoid/quartic_w_sigmoid_fit.png) | ![](outputs/benchmark/quartic_w/sigmoid/quartic_w_sigmoid_convergence.gif) |
-| leaky_relu | ![](outputs/benchmark/quartic_w/leaky_relu/quartic_w_leaky_relu_fit.png) | ![](outputs/benchmark/quartic_w/leaky_relu/quartic_w_leaky_relu_convergence.gif) |
-| sine | ![](outputs/benchmark/quartic_w/sine/quartic_w_sine_fit.png) | ![](outputs/benchmark/quartic_w/sine/quartic_w_sine_convergence.gif) |
-| identity | ![](outputs/benchmark/quartic_w/identity/quartic_w_identity_fit.png) | ![](outputs/benchmark/quartic_w/identity/quartic_w_identity_convergence.gif) |
+
+**tanh**
+<img src="outputs/benchmark/quartic_w/tanh/quartic_w_tanh_convergence.gif" width="100%">
+
+**relu**
+<img src="outputs/benchmark/quartic_w/relu/quartic_w_relu_convergence.gif" width="100%">
+
+**sigmoid**
+<img src="outputs/benchmark/quartic_w/sigmoid/quartic_w_sigmoid_convergence.gif" width="100%">
+
+**leaky_relu**
+<img src="outputs/benchmark/quartic_w/leaky_relu/quartic_w_leaky_relu_convergence.gif" width="100%">
+
+**sine**
+<img src="outputs/benchmark/quartic_w/sine/quartic_w_sine_convergence.gif" width="100%">
+
+**identity**
+<img src="outputs/benchmark/quartic_w/identity/quartic_w_identity_convergence.gif" width="100%">
 
 - Explanation: “W” shape; `leaky_relu` fits best thanks to non-zero negative slope.
 
