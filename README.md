@@ -2,42 +2,6 @@
 
 A minimal playground to study activation functions with single-neuron and tiny-MLP models. Includes static plots, convergence GIFs, and a benchmark across activations and target polynomials.
 
-## Setup
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-```
-
-## Scripts
-
-- `fit_single_neuron.py`: Train a single hidden neuron (choose activation) to fit a polynomial. Produces static plots and optional GIFs.
-- `relu_explore.py`: ReLU-only exploration (activation/derivative, static fit, convergence GIF, parameter trajectories, (w,b) loss heatmap).
-- `sigmoid_explore.py`: Single-parameter model `y = σ(w x)` with a fit figure and a two-panel convergence GIF (fit + `w` trajectory).
-- `benchmark_activations.py`: Compare 6 activations (`tanh`, `relu`, `sigmoid`, `leaky_relu`, `sine`, `identity`) over multiple polynomials. Produces per-case figures/GIFs and a Markdown report.
-
-## Quick start
-
-```bash
-# Single-neuron, tanh vs relu examples
-python fit_single_neuron.py
-
-# ReLU-only visuals
-python relu_explore.py
-
-# Sigmoid-only (y = σ(w x))
-python sigmoid_explore.py
-
-# Full benchmark across activations and polynomials
-python benchmark_activations.py
-```
-
-Outputs are written under `outputs/`:
-- ReLU visuals: `outputs/relu/`
-- Sigmoid visuals: `outputs/sigmoid/`
-- Benchmark: `outputs/benchmark/` (per-polynomial/per-activation folders plus `REPORT.md`)
-
 ## Benchmark summary
 
 We train a single hidden neuron with linear output for each activation and target polynomial. Loss: mean squared error (MSE). The report with inline previews is at `outputs/benchmark/REPORT.md`.
@@ -198,6 +162,44 @@ Each fit figure has: a figure-level header with the model, an on-plot box listin
 - All models are intentionally tiny to stay interpretable. Use `hidden_sizes` or `epochs`/`lr` in scripts to adjust capacity or training length.
 - Plots include figure-level function forms and annotation boxes in the order: x-range (top) → parameters → predicted y-range (bottom).
 - GIFs record snapshots every N steps for a short, readable animation.
+
+
+## Setup
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+## Scripts
+
+- `fit_single_neuron.py`: Train a single hidden neuron (choose activation) to fit a polynomial. Produces static plots and optional GIFs.
+- `relu_explore.py`: ReLU-only exploration (activation/derivative, static fit, convergence GIF, parameter trajectories, (w,b) loss heatmap).
+- `sigmoid_explore.py`: Single-parameter model `y = σ(w x)` with a fit figure and a two-panel convergence GIF (fit + `w` trajectory).
+- `benchmark_activations.py`: Compare 6 activations (`tanh`, `relu`, `sigmoid`, `leaky_relu`, `sine`, `identity`) over multiple polynomials. Produces per-case figures/GIFs and a Markdown report.
+
+## Quick start
+
+```bash
+# Single-neuron, tanh vs relu examples
+python fit_single_neuron.py
+
+# ReLU-only visuals
+python relu_explore.py
+
+# Sigmoid-only (y = σ(w x))
+python sigmoid_explore.py
+
+# Full benchmark across activations and polynomials
+python benchmark_activations.py
+```
+
+Outputs are written under `outputs/`:
+- ReLU visuals: `outputs/relu/`
+- Sigmoid visuals: `outputs/sigmoid/`
+- Benchmark: `outputs/benchmark/` (per-polynomial/per-activation folders plus `REPORT.md`)
+
 
 ## License
 
