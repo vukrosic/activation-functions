@@ -2,33 +2,6 @@
 
 A minimal playground to study activation functions with single-neuron and tiny-MLP models. Includes static plots, convergence GIFs, and a benchmark across activations and target polynomials.
 
-## Benchmark summary
-
-We train a single hidden neuron with linear output for each activation and target polynomial. Loss: mean squared error (MSE). The report with inline previews is at `outputs/benchmark/REPORT.md`.
-
-Example winners on the generated run (your results may vary with randomness):
-
-| polynomial   | best activation | best MSE |
-|--------------|-----------------|---------:|
-| linear_pos   | identity        | 0.0000   |
-| quadratic_u  | relu            | ~0.96    |
-| cubic_s      | leaky_relu      | ~1.42    |
-| cubic_neg    | identity        | ~1.76    |
-| quartic_w    | leaky_relu      | ~0.15    |
-
-Why these patterns?
-- Identity excels on linear-like targets (no nonlinearity needed).
-- ReLU often approximates convex shapes (e.g., upward quadratics) via a hinge + scaling.
-- Leaky ReLU and sine can better capture asymmetric or oscillatory features; leaky ReLU avoids dead zones of pure ReLU.
-- Tanh and sigmoid are bounded and can be strong for saturating shapes; with a single neuron, they cannot represent polynomials exactly.
-
-## Tutorial: Visual gallery (all images with explanations)
-
-Each fit figure has: a figure-level header with the model, an on-plot box listing x-range (top), parameters (`w, b, v, c`) in order, and predicted ŷ-range (bottom). GIFs animate training snapshots.
-
-### Benchmark: single-neuron across activations and polynomials
-- GIFs only below (full width); PNG fit images omitted.
-
 #### linear_pos
 
 **tanh**
@@ -200,6 +173,31 @@ Outputs are written under `outputs/`:
 - Sigmoid visuals: `outputs/sigmoid/`
 - Benchmark: `outputs/benchmark/` (per-polynomial/per-activation folders plus `REPORT.md`)
 
+
+
+## Benchmark summary
+
+We train a single hidden neuron with linear output for each activation and target polynomial. Loss: mean squared error (MSE). The report with inline previews is at `outputs/benchmark/REPORT.md`.
+
+Example winners on the generated run (your results may vary with randomness):
+
+| polynomial   | best activation | best MSE |
+|--------------|-----------------|---------:|
+| linear_pos   | identity        | 0.0000   |
+| quadratic_u  | relu            | ~0.96    |
+| cubic_s      | leaky_relu      | ~1.42    |
+| cubic_neg    | identity        | ~1.76    |
+| quartic_w    | leaky_relu      | ~0.15    |
+
+Why these patterns?
+- Identity excels on linear-like targets (no nonlinearity needed).
+- ReLU often approximates convex shapes (e.g., upward quadratics) via a hinge + scaling.
+- Leaky ReLU and sine can better capture asymmetric or oscillatory features; leaky ReLU avoids dead zones of pure ReLU.
+- Tanh and sigmoid are bounded and can be strong for saturating shapes; with a single neuron, they cannot represent polynomials exactly.
+
+## Tutorial: Visual gallery (all images with explanations)
+
+Each fit figure has: a figure-level header with the model, an on-plot box listing x-range (top), parameters (`w, b, v, c`) in order, and predicted ŷ-range (bottom). GIFs animate training snapshots.
 
 ## License
 
